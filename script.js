@@ -38,9 +38,9 @@
             for (let i = 0; i < buffer.byteLength; i++) {
                 bytes[i] = binary.charCodeAt(i) & 0xFF
             }
-            let blob = new Blob([bytes], {type:'audio/mp3'})
+            let blob = new Blob([bytes],  type)
             object.href = window.URL.createObjectURL(blob)
-            object.download = Math.random()*1000+'.mp3'
+            object.download = Math.random()*1000+'.ogg'
             // window.URL.revokeObjectURL(object.href)
           })
         })
