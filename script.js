@@ -21,6 +21,7 @@
         audio.src = reader.result
         audio.autoplay = false
         audio.controls = true
+        audio.controlsList="nodownload"
         const aud = document.createElement('div')
         aud.appendChild(audio)
         let a = document.createElement('a')
