@@ -40,7 +40,7 @@
             }
             let blob = new Blob([bytes], {type:'audio/mp3'})
             object.href = window.URL.createObjectURL(blob)
-            object.download = Math.random()*1000+'.ogg'
+            object.download = Math.random()*1000+'.mp3'
             // window.URL.revokeObjectURL(object.href)
           })
         })
