@@ -1,79 +1,96 @@
+@import url('/fontawesome/css/fontawesome-all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|VT323');
-
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size:16px;
+  font-size: 16px;
   text-decoration: none;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 }
 
-body{
+body {
   padding: 2rem;
 }
-h1{font-size: 3rem;}
-h4{
+
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
   font-family: 'VT323', monospace;
   font-size: 1.7rem;
 }
-a{
+
+a {
   font-size: 1.2rem;
 }
-.buttons{
+
+.buttons {
   display: flex;
   margin-top: 1rem;
   justify-content: center;
 }
 
-button, input[type=button]{
-  padding: 0.5rem;
-  margin-right: 1rem;
+button,
+input[type=button] {
+  padding: .5rem 1.15rem;
+  border-radius:100%;
   font-size: 1.5rem;
-  color:gray;
+  color: gray;
   background-color: whitesmoke;
 }
-#stop{
-  padding: 0.4rem .65rem;
+
+#stop {
   font-size: 1.7rem;
 }
-button[disabled], input[disabled]{
+
+button[disabled],
+input[disabled] {
   display: none !important;
 }
-button:hover, input[type=button]:hover{
-  color:black;
-  background-color:silver;
-}
-button:active, input[type=button]:active{
-  color:black;
-  background-color:white;
+
+button:hover,
+input[type=button]:hover {
+  color: black;
+  background-color: silver;
 }
 
-.audios{
+button:active,
+input[type=button]:active {
+  color: black;
+  background-color: white;
+}
+
+.audios {
   display: flex;
   margin-top: 1rem;
   flex-flow: column wrap;
   align-content: center;
   align-items: center;
 }
-.audios div{
-  margin-top:.5rem;
+
+.audios div {
+  margin-top: .5rem;
   display: flex;
 }
-.audios div .down{
+
+.audios div .down {
   font-size: 1.4rem;
-  padding:.4rem;
+  padding: .4rem;
   margin-left: 0.5rem;
   background-color: #3f3f3f;
-  color:#f0f0f0;
+  color: #f0f0f0;
 }
-.audios div .down:hover{
-  background-color:#f0f0f0;
-  color:#3f3f3f;
+
+.audios div .down:hover {
+  background-color: #f0f0f0;
+  color: #3f3f3f;
 }
-.audios div .down:active{
+
+.audios div .down:active {
   background-color: #0f0f0f;
-  color:#fff;
+  color: #fff;
 }
